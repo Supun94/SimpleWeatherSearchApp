@@ -14,6 +14,7 @@ export default class WeatherRepository {
 
   async getWeatherDetails(city) {
     const response = await this.api.get(
+      // TODO: openweathermap_api_key added for demo purpose, that needs to remove from config.json file
       `/data/2.5/forecast?q=${city}&appid=${configData.openweathermap_api_key}&units=metric`,
     );
     return response;
