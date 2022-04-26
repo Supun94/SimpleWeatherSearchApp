@@ -49,8 +49,8 @@ const WeatherForecastingList = ({data}) => {
                 </View>
                 <View style={styles.tempWrapper}>
                   <LazyLoadImage
-                    width={90}
-                    height={90}
+                    width={85}
+                    height={100}
                     imgUri={`https://openweathermap.org/img/wn/${result.weather[0].icon}.png`}
                   />
                   <View style={{paddingLeft: 2}}>

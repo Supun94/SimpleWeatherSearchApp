@@ -1,12 +1,8 @@
 import React, {useState} from 'react';
 import {ActivityIndicator} from 'react-native';
 import FastImage from 'react-native-fast-image';
-interface LazyLoadImageType {
-  width: number;
-  height: number;
-  imgUri: string;
-}
-const LazyLoadImage = (props: LazyLoadImageType) => {
+
+const LazyLoadImage = props => {
   const {width, height, imgUri} = props;
   const [loading, setLoading] = useState(true);
 
